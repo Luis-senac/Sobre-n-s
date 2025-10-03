@@ -1,0 +1,129 @@
+/* reset básico */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: aliceblue;
+}
+
+/* cabeçalho */
+
+.topo {
+  text-align: center;
+}
+
+.topo img {
+  width: 550px;
+  height: auto;
+}
+
+/* Galeria */
+
+.imagens {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex: 1;
+  gap: 10px;
+}
+
+.imagens img {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Conteúdo de texto */
+
+.conteudo {
+  flex: 2;
+  display: flex;
+  width: 90%;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+.conteudo p {
+  width: 55%;
+  font-size: 25px;
+  line-height: 1.5;
+  text-align: justify;
+  font-family: sans-serif;
+}
+
+/* Horário */
+
+.Horario {
+  flex: 1;
+  width: 90%;
+}
+
+.Horario p {
+  font-size: 18px;
+  text-align: left;
+  line-height: 1;
+  padding-left: 97px;
+}
+
+/* RESPONSIVIDADE */
+
+/* CELULARES */
+
+@media (max-width: 500px) {
+  .topo {
+    width: 100%;
+    height: auto;
+  }
+
+  .topo img {
+    width: 250px;
+  }
+
+  .conteudo {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+  }
+
+  .conteudo p {
+    width: 100%;
+    font-size: 15px;
+    justify-content: center;
+  }
+
+  .imagens img {
+    margin: 0;
+    width: 180px;
+  }
+}
+
+/* tablets */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .conteudo {
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+  }
+
+  .conteudo p {
+    width: 100%;
+    font-size: 25px;
+    justify-content: center;
+  }
+
+  .Horario P{
+    font-size: 32PX;
+    margin-top: 20PX;
+    margin-bottom: 20px;
+    padding-left: 110PX;
+  }
+}
